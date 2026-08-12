@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "partnership-leaders-research": {
+      "type": "http",
+      "url": "https://si-research-dashboard-production-25d8.up.railway.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "partnership-leaders-research",
+  "displayName": "Partnership Leaders Research",
+  "version": "0.1.0",
+  "description": "Query Partnership Leaders research evidence from the hosted MCP server.",
+  "author": {
+    "name": "Partnership Leaders"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "partnerships",
+    "partner-ecosystem",
+    "research",
+    "mcp",
+    "supabase"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
