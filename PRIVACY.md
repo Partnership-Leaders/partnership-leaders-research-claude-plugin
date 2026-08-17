@@ -4,7 +4,7 @@ This draft is a starting point for counsel and business-owner review before publ
 
 ## What The Plugin Does
 
-The Partnership Leaders Research plugin lets an authenticated user query Partnership Leaders research through a hosted MCP server. Claude sends the user's research request to the Partnership Leaders server, and the server returns only records the authenticated user is entitled to access.
+The Partnership Leaders Research plugin lets an authenticated user query Partnership Leaders research through a hosted MCP server. The connected AI client sends the user's research request to the Partnership Leaders server, and the server returns only records the authenticated user is entitled to access.
 
 ## Data Processed
 
@@ -39,13 +39,13 @@ Retention for server logs, research records, and authentication records is contr
 
 The plugin uses:
 
-- Anthropic Claude / Claude Code as the AI client.
+- The user's connected AI client.
 - Railway for hosting the MCP/API server.
 - Supabase for authentication and database services.
 
 ## User Choices
 
-Users can disconnect or revoke plugin authentication through Claude's MCP/plugin authentication controls. Partnership Leaders should also provide a support route for account removal or access questions before submission.
+Users can disconnect or revoke plugin authentication through their AI client's MCP/plugin authentication controls. Partnership Leaders should also provide a support route for account removal or access questions before submission.
 
 ## Contact
 

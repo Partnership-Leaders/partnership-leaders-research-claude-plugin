@@ -9,15 +9,13 @@ Use this copy in Supabase Authentication -> Emails -> Confirm sign up.
 
 <p><a href="{{ .ConfirmationURL }}">Confirm email</a></p>
 
-<p>After confirming your email, connect Partnership Leaders Research to Claude here:</p>
+<p>After confirming your email, connect Partnership Leaders Research in your AI client.</p>
 
 <p>
-  <a href="https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Partnership%20Leaders%20Research&connectorUrl=https%3A%2F%2Fsi-research-dashboard-production-25d8.up.railway.app%2Fmcp">
-    Add Partnership Leaders Research to Claude
-  </a>
+  MCP server URL: https://si-research-dashboard-production-25d8.up.railway.app/mcp
 </p>
 
-<p>If you see "authorization not found" after confirming your email, reopen the Claude connector link above and click Connect again. That message means the first Claude authorization window expired, not that your account failed.</p>
+<p>If you see "authorization not found" after confirming your email, reopen the MCP app connection and click Connect again. That message means the first authorization window expired, not that your account failed.</p>
 
 <p>Sample questions to try:</p>
 
@@ -27,4 +25,3 @@ Use this copy in Supabase Authentication -> Emails -> Confirm sign up.
   <li>What should a Head of Ecosystems watch from recent AI partnership moves?</li>
 </ul>
 ```
-

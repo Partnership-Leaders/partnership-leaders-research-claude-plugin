@@ -1,6 +1,6 @@
 # Reviewer Instructions
 
-Use these instructions for Anthropic review or an external pilot reviewer.
+Use these instructions for marketplace review or an external pilot reviewer.
 
 ## Connector
 
@@ -14,12 +14,6 @@ Connector URL:
 
 ```text
 https://si-research-dashboard-production-25d8.up.railway.app/mcp
-```
-
-Direct Claude connector link:
-
-```text
-https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Partnership%20Leaders%20Research&connectorUrl=https%3A%2F%2Fsi-research-dashboard-production-25d8.up.railway.app%2Fmcp
 ```
 
 ## Test Account
@@ -37,14 +31,14 @@ Do not commit real reviewer passwords or secrets.
 
 ## Setup Steps
 
-1. Open the direct Claude connector link.
+1. Add the MCP server URL in the reviewing AI client.
 2. Click Add.
 3. Click Connect.
 4. Sign in with the reviewer account.
 5. Approve the requested access.
-6. Ask Claude to use Partnership Leaders Research.
+6. Ask the AI client to use Partnership Leaders Research.
 
-If the auth page says `authorization not found`, reopen the direct Claude connector link and click Connect again. The prior Claude authorization request expired.
+If the auth page says `authorization not found`, reopen the MCP app connection and click Connect again. The prior authorization request expired.
 
 ## Test Prompts
 
@@ -68,9 +62,8 @@ Do not provide a news list. Give the executive judgment and explain what action 
 
 ## Expected Behavior
 
-- Claude should call read-only MCP tools.
+- The AI client should call read-only MCP tools.
 - The server should require authenticated access.
 - The answer should be grounded in returned research evidence.
 - The answer should be written for a senior partnership leader, not as a generic news summary.
 - The answer should avoid exposing internal dataset/process labels unless specifically asked for testing or admin context.
-

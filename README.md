@@ -1,12 +1,12 @@
-# Partnership Leaders Research Claude Plugin
+# Partnership Leaders Research MCP App
 
-This Claude plugin points Claude at the Partnership Leaders hosted MCP research server and adds PL-specific skills for source-grounded partner ecosystem research.
+This MCP app points supported AI clients at the Partnership Leaders hosted MCP research server and adds PL-specific skills for source-grounded partner ecosystem research.
 
 The plugin repository is safe to make public because it contains only:
 
-- `.claude-plugin/plugin.json`
+- plugin manifest
 - `.mcp.json` with the public Railway MCP endpoint
-- Claude skills and documentation
+- skills and documentation
 
 It must not contain server source code, Supabase data, service-role keys, API keys, OAuth client secrets, or partner records.
 
@@ -20,33 +20,19 @@ It must not contain server source code, Supabase data, service-role keys, API ke
 
 ## Local Testing
 
-From the root of the `si-research-dashboard` repo:
-
-```bash
-claude plugin validate ./claude-plugin
-claude --plugin-dir ./claude-plugin
-```
-
-Inside Claude Code:
-
-```text
-/plugin
-/mcp
-```
+Validate the wrapper with the relevant client CLI before submitting to a directory or marketplace. For platform-specific validation commands, use the internal submission checklist or the reviewing platform's docs.
 
 Approve the plugin-provided MCP server if prompted, then authenticate if the server requests sign-in.
 
 ## Pilot Install From GitHub
 
-After this directory is split or mirrored into a public GitHub plugin repo, pilot users can install from that repo while marketplace review is in flight.
+After this directory is split or mirrored into a public GitHub wrapper repo, pilot users can install from that repo when their client supports direct MCP app installation.
 
 Example:
 
-```bash
-claude plugin install github:YOUR_ORG/YOUR_PLUGIN_REPO
+```text
+Install from the public wrapper repo URL supplied by Partnership Leaders.
 ```
-
-Replace `YOUR_ORG/YOUR_PLUGIN_REPO` with the public wrapper repo.
 
 If the production Railway URL changes, update `.mcp.json` before validation, pilot, or submission.
 
@@ -55,7 +41,7 @@ If the production Railway URL changes, update `.mcp.json` before validation, pil
 The production flow is per-user OAuth:
 
 ```text
-Claude user -> Supabase Auth consent -> Railway MCP server -> entitlement gate -> Supabase Postgres RLS
+AI client user -> Supabase Auth consent -> Railway MCP server -> entitlement gate -> Supabase Postgres RLS
 ```
 
 Current repo status:
@@ -63,28 +49,28 @@ Current repo status:
 - The public plugin wrapper is scaffolded.
 - The MCP endpoint exists.
 - The MCP tools are read-only and annotated as read-only.
-- Supabase OAuth sign-in works with the Claude custom connector.
+- Supabase OAuth sign-in works with supported MCP clients.
 - Self-serve email verification can auto-create public-preview MCP entitlements through `database/auto_approve_mcp_signups.sql`.
 
-Before Anthropic submission, confirm `SUBMISSION_CHECKLIST.md`, `REVIEWER_INSTRUCTIONS.md`, and `PRIVACY.md` have final public URLs and support contacts.
+Before public submission, confirm `SUBMISSION_CHECKLIST.md`, `REVIEWER_INSTRUCTIONS.md`, and `PRIVACY.md` have final public URLs and support contacts.
 
-## Self-Serve Claude Connector
+## Self-Serve Connector
 
-Users can add the live connector directly:
+Users can add the live MCP server when their AI client supports custom MCP apps or connectors:
 
 ```text
-https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Partnership%20Leaders%20Research&connectorUrl=https%3A%2F%2Fsi-research-dashboard-production-25d8.up.railway.app%2Fmcp
+https://si-research-dashboard-production-25d8.up.railway.app/mcp
 ```
 
 Expected user flow:
 
-1. Open the connector link in Claude.
+1. Add the MCP server URL in the AI client.
 2. Click Add, then Connect.
 3. Create an account or sign in.
 4. Verify email if prompted.
-5. Return to the connector link and click Connect again if the original authorization page expired.
+5. Return to the connector and click Connect again if the original authorization page expired.
 6. Approve access.
-7. Ask Claude to use Partnership Leaders Research.
+7. Ask the AI client to use Partnership Leaders Research.
 
 ## Datasets
 
