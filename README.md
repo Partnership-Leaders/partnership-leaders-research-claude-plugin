@@ -12,7 +12,7 @@ It must not contain server source code, Supabase data, service-role keys, API ke
 
 ## Included
 
-- MCP server: `https://si-research-dashboard-production-25d8.up.railway.app/mcp`
+- MCP server: `https://partnership-leaders-research.up.railway.app/mcp`
 - Skills:
   - `pl-research-answering`
   - `pl-partner-ecosystem-scan`
@@ -59,7 +59,7 @@ Before public submission, confirm `SUBMISSION_CHECKLIST.md`, `REVIEWER_INSTRUCTI
 Users can add the live MCP server when their AI client supports custom MCP apps or connectors:
 
 ```text
-https://si-research-dashboard-production-25d8.up.railway.app/mcp
+https://partnership-leaders-research.up.railway.app/mcp
 ```
 
 Expected user flow:

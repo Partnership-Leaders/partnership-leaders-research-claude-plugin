@@ -13,7 +13,7 @@ Partnership Leaders Research
 Connector URL:
 
 ```text
-https://si-research-dashboard-production-25d8.up.railway.app/mcp
+https://partnership-leaders-research.up.railway.app/mcp
 ```
 
 ## Test Account
