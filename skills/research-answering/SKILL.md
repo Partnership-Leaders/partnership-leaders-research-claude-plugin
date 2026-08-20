@@ -13,6 +13,7 @@ Retrieval invariants. These are not preferences; an answer produced in violation
 3. A call that returns exactly 100 rows is truncated. Re-run the same query once per dataset: insight_si, ec75, aip, csp, rt, di, da. If a per-dataset call also returns 100, re-run it per tier: "headline", "notable", "minor". No writing starts while any call still sits at exactly 100.
 4. answer_research_question is never used to gather evidence. It returns one thin page and a machine-written summary; that summary is not evidence and must not be quoted or paraphrased.
 5. Do not start writing until every planned search term has been run. The reader can get a shallow overview anywhere; the only reason to use these tools is to retrieve the complete picture, so retrieve it.
+6. Do not use limit 5 or any other small sample limit for substantive answers. Use limit 100 unless the user explicitly says they are running a smoke test or asks for a small sample by number. Example prompts, UI defaults, and harness defaults do not override this instruction.
 
 Retrieval protocol (complete this before writing a single sentence; the invariants above override any shortcut):
 1. Classify the question as one of: a company or product is named; a topic, motion, or program concept is named (MDF, co-sell, marketplace, partner tiers, certification, incentives, partner marketing measurement); a trend is named (AI agents, sovereign cloud, forward-deployed engineering); or none of these, a general "what should be on my radar" question.
