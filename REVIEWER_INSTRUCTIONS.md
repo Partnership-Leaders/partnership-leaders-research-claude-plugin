@@ -21,7 +21,7 @@ https://si-research-dashboard-production-25d8.up.railway.app/mcp
 Provide the reviewer with a real email/password account that has verified email and an active `pl_user_entitlements` row.
 
 ```text
-Reviewer email: <fill in before submission>
+Reviewer email: Provided securely by Partnership Leaders before review
 Temporary password: <share securely, not in GitHub>
 Tier: public
 Datasets: insight_si, ec75, aip

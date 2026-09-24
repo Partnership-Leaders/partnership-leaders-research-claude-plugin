@@ -15,7 +15,7 @@ Use this before submitting the Partnership Leaders Research plugin to a public a
 - [ ] Run the relevant platform validation command.
 - [ ] Pilot with the relevant client development flow.
 - [ ] Split or mirror the wrapper into a public GitHub repo.
-- [ ] Decide final license string before public marketplace submission.
+- [x] Decide final license string before public marketplace submission.
 - [ ] Add final public repository URL to plugin docs, if desired.
 
 ## OAuth And Auth Items

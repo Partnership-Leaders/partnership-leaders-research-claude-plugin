@@ -88,8 +88,6 @@ The hosted MCP server exposes:
 - `list_companies`
 - `list_tags`
 - `list_events`
-- `evaluate_research_answer`
-- `answer_and_evaluate_research_question`
 
 ## Example Prompts
 
