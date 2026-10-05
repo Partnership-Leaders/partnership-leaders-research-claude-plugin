@@ -8,6 +8,8 @@
     "name": "Partnership Leaders"
   },
   "license": "MIT",
+  "icon": "./icon.png",
+  "privacyPolicyUrl": "https://github.com/Partnership-Leaders/partnership-leaders-research-claude-plugin/blob/main/PRIVACY.md",
   "keywords": [
     "partnerships",
     "partner-ecosystem",
